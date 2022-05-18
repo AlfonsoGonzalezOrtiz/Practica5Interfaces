@@ -16,7 +16,7 @@
 </head>
 
 <body class="bg-light">
-
+  <h1>Bootstrap Checkout Form</h1>
   <div class="container">
     <main>
       <div class="py-5 text-center">
@@ -70,8 +70,8 @@
 
           <form class="card p-2">
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Promo code">
-              <button type="submit" class="btn btn-secondary">Redeem</button>
+              <input for="redeem" type="text" class="form-control" placeholder="Promo code">
+              <button type="submit" class="btn btn-secondary" id="redeem">Redeem</button>
             </div>
           </form>
         </div>
@@ -176,18 +176,21 @@
             <h4 class="mb-3">Payment</h4>
 
             <div class="my-3">
-              <div class="form-check">
-                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
-                <label class="form-check-label" for="credit">Credit card</label>
-              </div>
-              <div class="form-check">
-                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
-                <label class="form-check-label" for="debit">Debit card</label>
-              </div>
-              <div class="form-check">
-                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
-                <label class="form-check-label" for="paypal">PayPal</label>
-              </div>
+              <fieldset>
+                <legend> Choose payment method</legend>
+                <div class="form-check">
+                  <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                  <label class="form-check-label" for="credit">Credit card</label>
+                </div>
+                <div class="form-check">
+                  <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="debit">Debit card</label>
+                </div>
+                <div class="form-check">
+                  <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="paypal">PayPal</label>
+                </div>
+              </fieldset>
             </div>
 
             <div class="row gy-3">
